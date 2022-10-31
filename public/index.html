@@ -1,37 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="../src/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <title>React App</title>
+</head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+
+<body>
+
+  <!--Header-->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header_logo">
+        <img src="icon.jpg">
+      </div>
+      <nav class="nav">
+        <a class="nav__link" href="#">Live</a>
+        <a class="nav__link" href="#">Music</a>
+        <a class="nav__link" href="#">Charts</a>
+        <a class="nav__link" href="#">Events</a>
+        <a class="nav__link" href="#">Features</a>
+        <a class="nav__link" href="#">Log in</a>
+        <a class="nav__link btn" href="#">Sign up</a>
+      </nav>
+    </div>
+  </header>
+  <!--Intro-->
+  <div class="intro">
+    <div class="container">
+      <h1 class="intro__title">Music</h1>
+    </div>
+  </div>
+
+
+  <!--Music-->
+  <div class="container">
+    <h2 class="title">Hot right now</h2>
+    <div class="music">
+      <div class="music__item">
+        <img class="music__item__icon" src="icon1.webp" alt="">
+        <a class="music__item__title" href="#">
+          Playboi Carti
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">trap</a>
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">cloud-rap</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon2.webp" alt="">
+        <a class="music__item__title" href="#">
+          Tyler, the Creator
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">rap</a>
+          <a class="music__item__genre__link" href="#">ofwgkta</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon3.webp" alt="">
+        <a class="music__item__title" href="#">
+          The Weeknd
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">rnb</a>
+          <a class="music__item__genre__link" href="#">electronic</a>
+          <a class="music__item__genre__link" href="#">canadian</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon4.webp" alt="">
+        <a class="music__item__title" href="#">
+          Juice WRLD
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">rap</a>
+          <a class="music__item__genre__link" href="#">emo rap</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon5.webp" alt="">
+        <a class="music__item__title" href="#">
+          Arctic Monkeys
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">indie rock</a>
+          <a class="music__item__genre__link" href="#">indie</a>
+          <a class="music__item__genre__link" href="#">british</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon6.webp" alt="">
+        <a class="music__item__title" href="#">
+          Kanye West
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">trap</a>
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">cloud-rap</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon7.webp" alt="">
+        <a class="music__item__title" href="#">
+          Kendrick Lamar
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">rap</a>
+          <a class="music__item__genre__link" href="#">hip hop</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon8.webp" alt="">
+        <a class="music__item__title" href="#">
+          Pusha T
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">trap</a>
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">cloud-rap</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon9.webp" alt="">
+        <a class="music__item__title" href="#">
+          XXXTentacion
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">trap</a>
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">cloud-rap</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon10.webp" alt="">
+        <a class="music__item__title" href="#">
+          Lana Del Rey
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">indie</a>
+          <a class="music__item__genre__link" href="#">female vocalists</a>
+          <a class="music__item__genre__link" href="#">pop</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon11.webp" alt="">
+        <a class="music__item__title" href="#">
+          NLE Choppa
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">trap</a>
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">cloud-rap</a>
+        </div>
+      </div>
+
+      <div class="music__item">
+        <img class="music__item__icon" src="icon12.webp" alt="">
+        <a class="music__item__title" href="#">
+          Blueface
+        </a>
+        <div class="music__item__genre">
+          <a class="music__item__genre__link" href="#">trap</a>
+          <a class="music__item__genre__link" href="#">hip-hop</a>
+          <a class="music__item__genre__link" href="#">cloud-rap</a>
+        </div>
+      </div>
+    </div>
+    <!--music-->
+  </div>
+  <!--container-->
+
+  <!--Tracks-->
+  <div class="container">
+    <h2 class="title">Popular tracks</h2>
+    <div class="tracks">
+      <div class="tracks__inner">
+
+
+        <div class="tracks__item">
+          <div class="track__item__icon">
+            <img src="track1.webp" alt="">
+          </div>
+          <div class="track__item__info">
+            <h3><a class="tracks__item__name" href="#">The Astronaut</a></h3>
+            <a class="tracks__item__author" href="#">Jin</a>
+            <div class="tracks__item__genre">
+              <a class="tracks__item__genre__link" href="#">rap</a>
+              <a class="tracks__item__genre__link" href="#">bts</a>
+              <a class="tracks__item__genre__link" href="#">hip-hop</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tracks__item">
+          <div class="track__item__icon">
+            <img src="track2.webp" alt="">
+          </div>
+          <div class="track__item__info">
+            <h3><a class="tracks__item__name" href="#">My Universe</a></h3>
+            <a class="tracks__item__author" href="#">Coldplay</a>
+            <div class="tracks__item__genre">
+              <a class="tracks__item__genre__link" href="#">pop</a>
+              <a class="tracks__item__genre__link" href="#">k-pop</a>
+              <a class="tracks__item__genre__link" href="#">bts</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tracks__item">
+          <div class="track__item__icon">
+            <img src="track3.webp" alt="">
+          </div>
+          <div class="track__item__info">
+            <h3><a class="tracks__item__name" href="#">YOURS</a></h3>
+            <a class="tracks__item__author" href="#">Jin</a>
+            <div class="tracks__item__genre">
+              <a class="tracks__item__genre__link" href="#">ost</a>
+              <a class="tracks__item__genre__link" href="#">ballad</a>
+              <a class="tracks__item__genre__link" href="#">kpop</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tracks__item">
+          <div class="track__item__icon">
+            <img src="track4.webp" alt="">
+          </div>
+          <div class="track__item__info">
+            <h3><a class="tracks__item__name" href="#">MORE</a></h3>
+            <a class="tracks__item__author" href="#">j-hope</a>
+            <div class="tracks__item__genre">
+              <a class="tracks__item__genre__link" href="#">rock</a>
+              <a class="tracks__item__genre__link" href="#">hip-hop</a>
+              <a class="tracks__item__genre__link" href="#">rap</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tracks__item">
+          <div class="track__item__icon">
+            <img src="track5.webp" alt="">
+          </div>
+          <div class="track__item__info">
+            <h3><a class="tracks__item__name" href="#">Shirt</a></h3>
+            <a class="tracks__item__author" href="#">SZA</a>
+            <div class="tracks__item__genre">
+              <a class="tracks__item__genre__link" href="#">rnb</a>
+              <a class="tracks__item__genre__link" href="#">soul</a>
+              <a class="tracks__item__genre__link" href="#">electronic</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tracks__item">
+          <div class="track__item__icon">
+            <img src="track6.webp" alt="">
+          </div>
+          <div class="track__item__info">
+            <h3><a class="tracks__item__name" href="#">ANTIFRAGILE</a></h3>
+            <a class="tracks__item__author" href="#">LE SSERAFIM</a>
+            <div class="tracks__item__genre">
+              <a class="tracks__item__genre__link" href="#">pop</a>
+              <a class="tracks__item__genre__link" href="#">jungkook</a>
+              <a class="tracks__item__genre__link" href="#">2022</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tracks__item">
+          <div class="track__item__icon">
+            <img src="track7.webp" alt="">
+          </div>
+          <div class="track__item__info">
+            <h3><a class="tracks__item__name" href="#">Left and Right (feat. Jung Kook of BTS)</a></h3>
+            <a class="tracks__item__author" href="#">Charlie Puth</a>
+            <div class="tracks__item__genre">
+              <a class="tracks__item__genre__link" href="#">pop</a>
+              <a class="tracks__item__genre__link" href="#">jungkook</a>
+              <a class="tracks__item__genre__link" href="#">2022</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!--tracks__inner-->
+    </div>
+    <!--tracks-->
+  </div>
+  <!--container-->
+
+<!--Footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+
+      <div class="footer__block">
+        <div class="footer__title">
+           <h2>company</h4>
+        </div>
+        <ul>
+          <li><a class="footer__link" href="#">Last.fm</a></li>
+          <li><a class="footer__link" href="#">Contact Us</a></li>
+          <li><a class="footer__link" href="#">Jobs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <div class="footer__title">
+           <h2>help</h4>
+        </div>
+        <ul>
+          <li><a class="footer__link" href="#">Track My Music</a></li>
+          <li><a class="footer__link" href="#">Community Support</a></li>
+          <li><a class="footer__link" href="#">Community Guidelines</a></li>
+          <li><a class="footer__link" href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <div class="footer__title">
+           <h2>goodies</h4>
+        </div>
+        <ul>
+          <li><a class="footer__link" href="#">Download Scrobbler</a></li>
+          <li><a class="footer__link" href="#">Developer API</a></li>
+          <li><a class="footer__link" href="#">Free Music Downloads</a></li>
+          <li><a class="footer__link" href="#">Merchandise</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <div class="footer__title">
+           <h2>account</h4>
+        </div>
+        <ul>
+          <li><a class="footer__link" href="#">Sign Up</a></li>
+          <li><a class="footer__link" href="#">Log In</a></li>
+          <li><a class="footer__link" href="#">Subscribe</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__block">
+        <div class="footer__title">
+           <h2>follow us</h4>
+        </div>
+        <ul>
+          <li><a class="footer__link" href="#">Facebook</a></li>
+          <li><a class="footer__link" href="#">Twitter</a></li>
+          <li><a class="footer__link" href="#">Instagram</a></li>
+          <li><a class="footer__link" href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
 </html>
