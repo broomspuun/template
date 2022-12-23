@@ -28,7 +28,6 @@ async function fetchAll() {
     await Promise.all([fetchData("chart.gettopartists"), fetchData("chart.gettoptracks")])   // start two queries -> resonse = data array where data[0] - hotArtists ||| data[1] - hotTracks
     .then( 
         (data) => {
-            console.log(data[1]);
             resultData.dataHotArtists = data[0]; //  array artists[] -> artist[] -> artist info 
             resultData.dataHotTracks = data[1]; // array tracks[] -> track[] -> track info
         }
@@ -39,7 +38,6 @@ async function fetchAll() {
         (data) => { // response = data array of length limit*2. [0..limit-1] elements are artist tags. [limit, limit*2-1] elements are track tags.
             resultData.artistTagsDatas = data.slice(0, (data.length) / 2); // [0..limit-1] elements are artist tags
             resultData.trackTagsDatas = data.slice((data.length) / 2, data.length); // [limit, limit*2-1] elements are track tags
-            console.log(resultData.trackTagsDatas)
         }
     )
     return resultData;
@@ -55,7 +53,7 @@ function fillHotTracks(dataHotTracks, trackTagsDatas) { // params: dataHotTracks
         createCardTrack(dataHotTracks.tracks.track[i], trackTagsDatas[i])
     }
 }
-export function createCardArtist(artist, artistTagsDatas) { // params: artist - object ||| artistTagsDatas = tag[] + artist -> tag info
+function createCardArtist(artist, artistTagsDatas) { // params: artist - object ||| artistTagsDatas = tag[] + artist -> tag info
     AddCardHotlist(
         artist.name, // artist name
         artist.url, // artist page url
@@ -63,7 +61,7 @@ export function createCardArtist(artist, artistTagsDatas) { // params: artist - 
         artistTagsDatas.toptags.tag.slice(0, 3) // take the 3 most popular tags(genres)
     )
 }
-export function createCardTrack(track, trackTagsDatas) { // params: track - object ||| trackTagsDatas = tag[] + artist -> tag info
+function createCardTrack(track, trackTagsDatas) { // params: track - object ||| trackTagsDatas = tag[] + artist -> tag info
     AddCardTracksList(
         track.name, // track name
         track.url, // track page url

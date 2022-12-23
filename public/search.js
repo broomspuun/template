@@ -16,7 +16,6 @@ async function start(category = "Top results"){ // Дефолтный разде
     const searchText = (new URLSearchParams(window.location.search)).get("q") ?? ""; // Вычленяем значение из параметра q(текст, который мы введем в поле поиска)
     if(searchText != ""){
         const fetchedData = await fetchAllData(searchText);
-        console.log(fetchedData);
         showSearchResult(searchText, category, fetchedData);
         if(fetchedData.dataArtists.results.artistmatches.artist.length === 0 //Если не найдено ни одного артиста
             && fetchedData.dataAlbums.results.albummatches.album.length === 0 //Если не найдено ни одного альбома
@@ -37,9 +36,6 @@ async function fetchAllData(searchText){
     await Promise.all([fetchResult("artist.search", "artist", searchText), fetchResult("album.search", "album", searchText), fetchResult("track.search", "track", searchText)])
     .then(
         (data) => {
-            console.log(data[0]);
-            console.log(data[1]);
-            console.log(data[2]);
             resultData.dataArtists = data[0];
             resultData.dataAlbums = data[1];
             resultData.dataTracks = data[2];
