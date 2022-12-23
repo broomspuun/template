@@ -12,7 +12,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
-  <title>React App</title>
+  <title>Главная страница</title>
+
+  <script src="script.js" defer></script>
 </head>
 
 
@@ -25,6 +27,7 @@
       <img src="icon.jpg">
       <img id="logo" style src="logo.png">
       <nav class="nav">
+        <button type="button" class="search"><img src="https://www.last.fm/static/images/icons/search_16.bde37072495a.png"></button>
         <a class="link" href="#">Live</a>
         <a class="link" href="#">Music</a>
         <a class="link" href="#">Charts</a>
@@ -34,6 +37,11 @@
         <a class="link btn" href="#" style="color: rgb(0, 0, 0);">Sign up</a>
       </nav>
     </div>
+    <section class="header__search hidden">
+      <input type="text" class="header__search__input" placeholder="Input search">
+      <button type="button" class="search"> <img src="https://www.last.fm/static/images/icons/clear_field_16.4768b21c62e1.png"> </button>
+      <button type="button" class="search"> <img src="https://www.last.fm/static/images/icons/search_16.bde37072495a.png"> </button>
+    </section>
   </header>
   <!--Header-->
 
