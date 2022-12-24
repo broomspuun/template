@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>Страница поиска</title>
+
+    <script src="search.js" defer></script>
+</head>
+
+
+
+<body>
+
+    <!--Header-->
+    <header class="header">
+        <div class="header__inner">
+            <img src="icon.jpg">
+            <img id="logo" style src="logo.png">
+            <nav class="nav">
+                <a class="link" href="#">Live</a>
+                <a class="link" href="#">Music</a>
+                <a class="link" href="#">Charts</a>
+                <a class="link" href="#">Events</a>
+                <a class="link" href="#">Features</a>
+                <a class="link" href="#">Log in</a>
+                <a class="link btn" href="#" style="color: rgb(0, 0, 0);">Sign up</a>
+            </nav>
+        </div>
+    </header>
+    <!--Header-->
+
+
+    <div class="container__top">
+        <div class="container">
+            <h1 class="search__result">Search results for “search”</h1>
+            <nav class="navigation">
+                <a class="link active" href="#">Top results</a>
+                <a class="link inactive" href="#">Artists</a>
+                <a class="link inactive" href="#">Albums</a>
+                <a class="link inactive" href="#">Tracks</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container__inner">
+            <form onsubmit="return false;">
+                <input type="text" class="search__input">
+                <button type="button" class="lens"><img src="https://www.last.fm/static/images/icons/search_16.bde37072495a.png"></button>
+                <button type="button" class="cross"><img src="https://www.last.fm/static/images/icons/clear_field_16.4768b21c62e1.png"></button>
+            </form>
+        <div class="section artists">
+            <a class="title__link" href="#">Artists</a>
+            <div class="artists__list search__list">
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">1st Artist</a></h3>
+                            <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">2nd Artist</a></h2>
+                        <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">3rd Artist</a></h2>
+                        <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">4th Artist</a></h2>
+                        <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">5th Artist</a></h2>
+                        <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">6th Artist</a></h2>
+                        <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">7th Artist</a></h2>
+                        <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="artist_icon.png" alt="">
+                    <div class="info">
+                        <h2><a href="#">8th Artist</a></h2>
+                        <p href="#">4,645,789 listeners</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="section albums">
+            <a href="#" class="title__link">Albums</a>
+            <div class="albums__list search__list">
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">1st Album</a></h2>
+                        <p href="#">1st Artist's</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">2nd Album</a></h2>
+                        <p href="#">2nd Artist's</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">3rd Album</a></h2>
+                        <p href="#">3rd Artist's</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">4th Album</a></h2>
+                        <p href="#">4th Artist's</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">5th Album</a></h2>
+                        <p href="#">4th Artist's</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">6th Album</a></h2>
+                        <p href="#">4th Artist's</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">7th Album</a></h2>
+                        <p href="#">4th Artist's</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="album_icon.webp" alt="">
+                    <div class="info">
+                        <h2><a href="#">8th Album</a></h2>
+                        <p href="#">4th Artist's</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="section tracks">
+            <a href="#" class="title__link">Tracks</a>
+            <div style="margin-bottom: 20px" class="tracks__list search__list">
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">Going Bad (feat. Drake)</a></h2>
+                    <a class="link" href="#">Meek Mill</a>
+                </div>
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">Passionfruit</a></h2>
+                    <a class="link" href="#">Drake</a>
+                </div>
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">POPSTAR (feat. Drake)</a></h2>
+                    <a class="link" href="#">DJ Khaled</a>
+                </div>
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">Money In The Grave (Drake ft. Rick Ross)</a></h2>
+                    <a class="link" href="#">Drake</a>
+                </div>
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">Solid (feat. Drake)</a></h2>
+                    <a class="link" href="#">Young Stoner Life</a>
+                </div>
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">Bubbly (with Drake & Travis Scott)</a></h2>
+                    <a class="link" href="#">Young Thug</a>
+                </div>
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">Life Is Good (feat. Drake)</a></h2>
+                    <a class="link" href="#">Future</a>
+                </div>
+
+
+                <div class="track__item">
+                    <img src="play.png" alt="">
+                    <img src="artist_icon1.png" alt="">
+                    <img src="like.png" alt="">
+                    <h2><a class="link" href="#">Drama (feat. Drake)</a></h2>
+                    <a class="link" href="#">Roy Woods</a>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+
+                <div class="footer__block">
+                    <div class="footer__title">
+                        <h2>company</h4>
+                    </div>
+                    <ul>
+                        <li><a class="link" href="#">Last.fm</a></li>
+                        <li><a class="link" href="#">Contact Us</a></li>
+                        <li><a class="link" href="#">Jobs</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__block">
+                    <div class="footer__title">
+                        <h2>help</h4>
+                    </div>
+                    <ul>
+                        <li><a class="link" href="#">Track My Music</a></li>
+                        <li><a class="link" href="#">Community Support</a></li>
+                        <li><a class="link" href="#">Community Guidelines</a></li>
+                        <li><a class="link" href="#">Help</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__block">
+                    <div class="footer__title">
+                        <h2>goodies</h4>
+                    </div>
+                    <ul>
+                        <li><a class="link" href="#">Download Scrobbler</a></li>
+                        <li><a class="link" href="#">Developer API</a></li>
+                        <li><a class="link" href="#">Free Music Downloads</a></li>
+                        <li><a class="link" href="#">Merchandise</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__block">
+                    <div class="footer__title">
+                        <h2>account</h4>
+                    </div>
+                    <ul>
+                        <li><a class="link" href="#">Sign Up</a></li>
+                        <li><a class="link" href="#">Log In</a></li>
+                        <li><a class="link" href="#">Subscribe</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer__block">
+                    <div class="footer__title">
+                        <h2>follow us</h4>
+                    </div>
+                    <ul>
+                        <li><a class="link" href="#">Facebook</a></li>
+                        <li><a class="link" href="#">Twitter</a></li>
+                        <li><a class="link" href="#">Instagram</a></li>
+                        <li><a class="link" href="#">YouTube</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
